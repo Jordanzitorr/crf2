@@ -1,0 +1,22 @@
+{
+    "todos": [
+        {
+            "titulo": "Tarea 1",
+            "responsable": "Jordan",
+            "descripcion": "texto aleatorio descriptivo",
+            "prioridad": "baja"
+        },
+        {
+            "titulo": "Tarea 2",
+            "responsable": "Pepe",
+            "descripcion": "texto aleatorio descriptivo",
+            "prioridad": "media"
+        },
+        {
+            "titulo": "Tarea 3",
+            "responsable": "Lolo",
+            "descripcion": "texto aleatorio descriptivo",
+            "prioridad": "alta"
+        }
+    ]
+}

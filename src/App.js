@@ -1,25 +1,43 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import todos from './todos.json'
+import { Component } from 'react';
+
+class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+      todos
+    } 
+  }
+
+    render(){
+      const todos = this.state.todos.map((todo, i) => {
+        return(
+          <div className="card">
+            {todo.titulo}
+          </div>
+        )
+      })
+
+      return (
+        <div className="App">
+
+            <nav className="navbar navbar-dark bg-dark">
+            <a href="" className="text-white">
+              Tasks
+            </a>
+          </nav>
+
+          { todos }
+
+            <img src={logo} className="App-logo" alt="logo" />
+        </div>
+      )
+    }
 }
+
+
 
 export default App;
